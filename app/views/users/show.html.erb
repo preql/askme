@@ -11,9 +11,20 @@
     @<%= @user.username %>
   </h2>
 
-  <div class="title-small buffer-both">
-    <p><%= @questions.length %></p>
-    <p><%= sklonenie(@questions.length, 'вопрос', 'вопроса', 'вопросов') %></p>
+  <div class="user-statistics container">
+    <div class="column-1-3">
+      <h1 class="title-medium"><%= @questions_count %></h1>
+      <p><%= sklonenie(@questions_count, 'вопрос', 'вопроса', 'вопросов') %></p>
+    </div>
+    <div class="column-1-3">
+      <h1 class="title-medium"><%= @answered_count %></h1>
+      <p>с ответом</p>
+    </div>
+    <div class="column-1-3">
+       <h1 class="title-medium"><%= @unanswered_count %></h1>
+        <p>без ответа</p>
+      </div>
+    </div>
   </div>
 
   <div class="user-ask-button container text-center">
