@@ -5,6 +5,8 @@ ruby '2.5.5'
 
 gem 'rails', '~> 5.2.3'
 
+gem 'rails_12factor'
+
 gem 'uglifier'
 
 gem 'jquery-rails', '~> 4.2'
