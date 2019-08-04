@@ -12,6 +12,7 @@ class User < ApplicationRecord
   validates :email, :username, uniqueness: true
   validates :username, length: { maximum: 40 },
             format: { with: /\A[a-zA-Z0-9\_]+\z/ }
+  validates :color, format: { with: /\A#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})\z/ }
 
   attr_accessor :password
 
