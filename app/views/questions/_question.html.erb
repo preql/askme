@@ -1,17 +1,25 @@
-<%# question ||= nil %>
-<%# action_icon = question.answer.blank? ? 'reply' : 'pencil' %>
-
 <div class="question">
   <div class="question-content">
     <div class="question-text text-lead">
       <%= question.text %>
     </div>
 
+    <% if question.author.present? %>
+      <p class="buffer-both question-actions">
+        Вопрос от пользователя:
+        <%= link_to question.author.username, user_path(question.author) %>
+      </p>
+    <% else %>
+      <p class="buffer-both question-actions">
+        Спрашивает Гость
+      </p>
+    <% end %>
+
     <% if question.answer.present? %>
-    <div class="question-answer text-lead">
-      <%= question.answer if question.answer.present? %>
-    </div>
-      <% end %>
+      <div class="question-answer text-lead">
+        <%= question.answer if question.answer.present? %>
+      </div>
+    <% end %>
 
     <div class="question-date">
       <%= l(question.created_at, format: :short) %>
