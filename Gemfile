@@ -10,7 +10,7 @@ gem 'rails_12factor'
 gem 'uglifier'
 
 gem 'jquery-rails', '~> 4.2'
-
+gem 'recaptcha', require: 'recaptcha/rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do
