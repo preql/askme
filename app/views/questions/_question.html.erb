@@ -25,6 +25,12 @@
       <%= l(question.created_at, format: :short) %>
     </div>
 
+    <div class="buffer-top">
+      <% question.tags.each do |tag| %>
+        <%= link_to "#{tag.name}", tag_path(tag) %>&nbsp;
+      <% end %>
+    </div>
+
     <% if question.user == current_user %>
       <% edit_icon = question.answer.blank? ? 'reply' : 'pencil' %>
       <div class="question-actions">
