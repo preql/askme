@@ -27,6 +27,14 @@ gem install bundler
 bundle install
 bundle exec rake db:migrate
 ```
+
+Так же нужно указать значения переменных окружения для работы `reCAPTCHA`:
+
+```
+RECAPTCHA_ASKME_PUBLIC_KEY
+RECAPTCHA_ASKME_PRIVATE_KEY
+```
+
 ## Демо ##
 Рабочая версия приложения [здесь](https://sprask.herokuapp.com/).
 
