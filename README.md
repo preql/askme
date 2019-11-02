@@ -1,24 +1,34 @@
-# README
+# Приложение "Хорошие вопросы" #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Описание ##
+  Аналог известного сайта ask.fm.
+  
+  Огромное количество вопросов, возникающих у вас ежедневно, могут найти ответы в этом приложении. Миллионы пользователей по всему миру задают вопросы, отвечают на них и делятся друг с другом информацией.
+  
+  После регистрации пользователь заполняет свою анкету и может начать, как от своего имени, так и анонимно задавать и отвечать на вопросы других пользователей.
+  
+  
+  `ruby 2.5.5`
+  
+  `rails 5.2.3`
+  
+  Использованные технологии:
+- `reCAPTCHA` от google
 
-Things you may want to cover:
+## Установка ##
+Скачайте или клонируйте приложение, установите гем `bundler` если у вас его нет:
 
-* Ruby version
+```
+gem install bundler
+```
 
-* System dependencies
+Чтобы скачать необходимые библиотеки и подготовить базу данных в дериктории с приложением необходимо выполнить команды:
+```
+bundle install
+bundle exec rake db:migrate
+```
+## Демо ##
+Рабочая версия приложения [здесь](https://sprask.herokuapp.com/).
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Контактные данные ##
+stereotype1@mail.ru
