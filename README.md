@@ -37,6 +37,3 @@ RECAPTCHA_ASKME_PRIVATE_KEY
 
 ## Демо ##
 Рабочая версия приложения [здесь](https://sprask.herokuapp.com/).
-
-## Контактные данные ##
-stereotype1@mail.ru
